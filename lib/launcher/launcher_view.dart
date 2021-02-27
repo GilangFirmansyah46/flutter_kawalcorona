@@ -23,14 +23,25 @@ class _LauncherPageState extends State<LauncherPage> {
     });
   }
 
-  @override
+ @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      body: new Center(
-        child: new Image.asset(
-          "img/gambarcorona.jpg",
-          height: 200.0,
-          width: 400.0,
+    return Scaffold(
+      backgroundColor: Colors.black,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+
+          children: <Widget>[
+            Image.asset("img/gambarcorona.jpg"),
+            Text("          "),
+            Text("TRACKING COVID",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontSize: 30.0,
+              ),
+            ),
+          ],
         ),
       ),
     );
